@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-const username = fs.readFileSync('nivankadilshan.txt', 'utf8').trim()
+const username = fs.readFileSync('github_username.txt', 'utf8').trim()
 if(process.env.GITHUB_AUTH_TOKEN){
 GITHUB_TOKEN = process.env.GITHUB_AUTH_TOKEN
 }else{
